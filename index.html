@@ -84,7 +84,7 @@
         const old_prompt = "make an ${language} reading comprehension test of roughly 400 words with 5 multiple choice questions; the topic of the story should be ${topic}. state the correct answer after all the questions. Return the story and the questions with correct answers in JSON format. do not provide explanatory text. do not wrap answer in markdown."
 
         async function fetchTest() {
-            const prompt = `make a multiple choice quiz written in ${language} with 10 questions about ${topic} syntax with 5 answers A through E. the question should include a snippet of several lines (5-10) lines of code. each answer should be possible fixes. code should be demarcated with markdown code backticks. generate a representation with the questions and answers in YAML format. keep the markdown representation within the values. do not provide explanatory text before or after response. the question must always be a single string. no markdown backticks in answers.
+            const prompt = `write in ${language}. make a multiple choice quiz with 10 questions about ${topic} syntax with 5 answers A through E. the question should include a snippet of several lines (5-10) lines of code. each answer should be possible fixes. code should be demarcated with markdown code backticks. generate a representation with the questions and answers in YAML format. keep the markdown representation within the values. do not provide explanatory text before or after response. the question must always be a single string. no markdown backticks in answers.
 
             Background will say "You will be asked to complete a Python syntax quiz"
 
