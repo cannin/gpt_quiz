@@ -86,7 +86,7 @@
         async function fetchTest() {
             const prompt = `make a multiple choice quiz in ${language} with 10 questions about ${topic} syntax with 5 answers A through E. the question should include a snippet of several lines (5-10) lines of code. each answer should be possible fixes. code should be demarcated with markdown code backticks. generate a representation with the questions and answers in YAML format. do not provide explanatory text before or after response. the question must always be a single string. no markdown backticks in answers.
 
-            Background will say "You will be asked to complete a Python syntax quiz" translated in this language ${language}
+            Background will say "You will be asked to complete a ${topic} syntax quiz" translated in this language ${language}
 
             Escape double quotes in options entries with a forward slash like \"
 
